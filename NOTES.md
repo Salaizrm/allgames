@@ -28,9 +28,9 @@ LAYOUT(what I want it to look like for the user)
 
 please select one of the options provided:
 
-list all games coming out this year.
-list all games coming our for a specific month.
-search for a specific game.
+0 - list all games coming out this year.
+1 - list all games coming our for a specific month.
+2 - search for a specific game.
 OPTION 0:
 
 JANUARY:
