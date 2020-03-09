@@ -9,13 +9,14 @@ class Allgames::CLI
   
   def menu
     puts "please select one of the options provided:"
-    puts <<-LIST
+    puts <<-MENU
     0 - list all games coming out this year.
     1 - list all games coming out for a specific month.
     2 - search for a specific game.
     
+    To return to this menu type 'menu'
     To exit this program simply type 'exit'
-    LIST
+    MENU
   end
   
   def user_input
@@ -27,12 +28,14 @@ class Allgames::CLI
         year
       when "1"
         month  
-        when "#{specific_month}"
+      #when "#{specific_month}"
           #returns list of games from that month
       when "2"
         specific_game
-        when "#{specific_videogame}"
+      #when "#{specific_videogame}"
           #returns specific videogame
+      when "menu"
+        menu
       end
     end
   end

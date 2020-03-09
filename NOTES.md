@@ -13,7 +13,7 @@ GENERAL IDEA:
 This CLI when prompted should return any and all info(recent) regarding videogame(s).
 
 Name, release date, what platforms it will be available on, company developing game, description and USRB(games rating)
-WILL list all videogames for this year when started (lists corresponding dates to game).
+WILL list all videogames for this year when prompted (lists corresponding dates to game).
 lists all videogames in a given month when prompted.
 then asks for input ("type the name of the game you'd like to view").
 Can search for specific game.
