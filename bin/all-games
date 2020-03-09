@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require './lib/all_games'
+
+Allgames::CLI.new.call
