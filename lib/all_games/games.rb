@@ -1,6 +1,9 @@
 class AllGames::Games
 
 
+
+
+
   def self.year
     puts "2020 GAMES"
     AllGames::Scraper.new
