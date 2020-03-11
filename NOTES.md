@@ -31,17 +31,13 @@ please select one of the options provided:
 0 - list all games coming out this year.
 1 - list all games coming our for a specific month.
 2 - search for a specific game.
+
 OPTION 0:
 
-JANUARY:
-
-EXAMPLE(release date)
-EXAMPLE(release date)
-
-FEBRUARY:
-
-EXAMPLE(release date)
-EXAMPLE(release date)
+AO Tennis 2 (PC) – January 9
+Monster Hunter World: Iceborne (PC) – January 9
+Dawn of Fear (PlayStation 4) – February 3
+Life is Strange 2: Complete Season (PlayStation 4, Xbox One, PC) – February 4
 
 etc.
 
