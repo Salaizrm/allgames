@@ -1,19 +1,17 @@
 class AllGames::Games
-  
-  attr_accessor :name, :release_date, :platforms, :developer, :publisher, :usrb, :url
-  
-  @@all = []
-  
-  def initialize
-    @name = name
-    @release_date = release_date
-    @platforms = platforms
-    @developer = developer
-    @publisher = publisher
-    @usrb = usrb
-    @url = url
-    @@all << self
+
+  def self.year
+    puts "2020 GAMES"
+    year_list = self.new
+    year_list.month = "JANUARY"
+    year_list.games = "blah blah(pc)(JANUARY 1)"
+
+    year_list
   end
-  
-  
+
+  def self.month
+    puts " "
+  end
+
+
 end

@@ -35,11 +35,13 @@ OPTION 0:
 
 JANUARY:
 
-EXAMPLE(release date) EXAMPLE(release date)
+EXAMPLE(release date)
+EXAMPLE(release date)
 
 FEBRUARY:
 
-EXAMPLE(release date) EXAMPLE(release date)
+EXAMPLE(release date)
+EXAMPLE(release date)
 
 etc.
 
@@ -47,7 +49,8 @@ OPTION 1:
 
 JANUARY:
 
-EXAMPLE(release date) EXAMPLE(release date)
+EXAMPLE(release date)
+EXAMPLE(release date)
 
 option 2: "please type the name of the game you would like details on" input= "Cyberpunk 2077"
 
