@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "all_games/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "all-games"
+  spec.name          = "allgames"
   spec.version       = AllGames::VERSION
   spec.authors       = ["'Robert Salaiz'"]
   spec.email         = ["'work.salaizrm@gmail.com'"]
