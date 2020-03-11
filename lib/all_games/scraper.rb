@@ -8,9 +8,12 @@ class AllGames::Scraper
   end
 
   def scrape_page_index(year)
-    self.get_page.css("div.ds-main").each do |game|
-      month = game.css("")
-      name = game.css("h2").attribute("div.views-entity-embed").value
+    self.get_page.css("div.ds-main")
+  end
+
+  def create_list
+    scrape_page_index.each do |r|
+      AllGames::Games.new_from_index_page(r)
     end
   end
 

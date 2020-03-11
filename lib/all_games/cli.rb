@@ -24,30 +24,28 @@ class AllGames::CLI
     while input != "exit"
       input = gets.strip.downcase
       case input
-      when "0"
-        year
-      when "1"
-        month
-      #when "#{specific_month}"
-          #returns list of games from that month
-      when "2"
-        specific_game
-      #when "#{specific_videogame}"
-          #returns specific videogame
-      when "menu"
-        menu
+        when "0"
+          year
+        when "1"
+          month
+        when "2"
+          specific_game
+        when "menu"
+          menu
+        end
       end
     end
-  end
 
   def year
     puts "here are the list of games coming out this year:"
-    @games = AllGames::Games.year 
+    @games = AllGames::Games.year
   end
 
   def month
     puts "please enter the month you would like to view:"
-    #build scrape
+    if user_input == "january"
+      @games = AllGames::Games.month.january
+    end
   end
 
   def specific_game

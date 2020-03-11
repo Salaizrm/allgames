@@ -1,17 +1,24 @@
 class AllGames::Games
 
+
   def self.year
     puts "2020 GAMES"
+    AllGames::Scraper.new
     year_list = self.new
-    year_list.month = "JANUARY"
-    year_list.games = "blah blah(pc)(JANUARY 1)"
-
-    year_list
+    year_list = self.month
+    year_list = self.game
   end
 
-  def self.month
-    puts " "
+  def month
+    @month
+  end
+
+  def self.game
+    puts "blah blah blah"
   end
 
 
 end
+
+
+#I wonder how I can make the year interchangeable?
