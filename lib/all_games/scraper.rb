@@ -1,6 +1,7 @@
 require 'pry'
+require 'nokogiri'
 
-class Allgames::Scraper
+class AllGames::Scraper
   
   def get_page
     Nokogiri::HTML(open("https://www.gameinformer.com/2020"))

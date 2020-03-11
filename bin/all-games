@@ -2,4 +2,4 @@
 
 require './lib/all_games'
 
-Allgames::CLI.new.call
+AllGames::CLI.new.call

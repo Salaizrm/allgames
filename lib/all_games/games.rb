@@ -1,4 +1,4 @@
-class Allgames::Games
+class AllGames::Games
   
   attr_accessor :name, :release_date, :platforms, :developer, :publisher, :usrb, :url
   

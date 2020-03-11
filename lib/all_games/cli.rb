@@ -1,4 +1,4 @@
-class Allgames::CLI
+class AllGames::CLI
   
   def call
     puts "Hello and welcome to ALL-Games!"
