@@ -24,5 +24,9 @@ class AllGames::Games
     @@all.select {|s| s.release.include?(user_input)}
   end
 
+  def self.year
+    @@all.select
+  end
+
 
 end
