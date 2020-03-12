@@ -12,8 +12,8 @@ class AllGames::Games
     year_list = self.game
   end
 
-  def month
-    @month
+  def self.month
+    january(AllGames::Scraper.scrape_month)
   end
 
   def self.game

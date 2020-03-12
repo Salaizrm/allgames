@@ -36,15 +36,17 @@ class AllGames::CLI
       end
     end
 
-  def year
+  def self.year
     puts "here are the list of games coming out this year:"
     @games = AllGames::Games.year
   end
 
-  def month
+  def self.month
     puts "please enter the month you would like to view:"
-    if user_input == "january"
+    input = gets.strip.downcase
+    if input == "january"
       @games = AllGames::Games.month.january
+      binding.pry
     end
   end
 
