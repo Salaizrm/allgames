@@ -1,27 +1,28 @@
 class AllGames::Games
 
+  attr_accessor :name, :platform, :release, :url
 
+  @@all = []
 
-
-
-  def self.year
-    puts "2020 GAMES"
-    AllGames::Scraper.new
-    year_list = self.new
-    year_list = self.month
-    year_list = self.game
+  def initialize(name,platform,release,url)
+    @name = name
+    @platform = platform
+    @release = release
+    @url = url
+    @@all << self
   end
 
-  def self.month
-    january(AllGames::Scraper.scrape_month)
+  def self.all
+    @@all
   end
 
-  def self.game
-    puts "blah blah blah"
+  def self.reset_all
+    @@all.clear
+  end
+
+  def self.month(user_input)
+    @@all.select {|s| s.release.include?(user_input)}
   end
 
 
 end
-
-
-#I wonder how I can make the year interchangeable?

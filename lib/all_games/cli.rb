@@ -2,6 +2,7 @@ class AllGames::CLI
 
   def call
     puts "Hello and welcome to ALL-Games!"
+    AllGames::Scraper.scrape_month
     menu
     user_input
     goodbye
@@ -36,17 +37,16 @@ class AllGames::CLI
       end
     end
 
-  def self.year
+  def year
     puts "here are the list of games coming out this year:"
     @games = AllGames::Games.year
   end
 
-  def self.month
+  def month
     puts "please enter the month you would like to view:"
     input = gets.strip.downcase
     if input == "january"
       @games = AllGames::Games.month.january
-      binding.pry
     end
   end
 
