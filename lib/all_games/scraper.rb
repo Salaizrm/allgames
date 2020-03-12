@@ -5,8 +5,6 @@ class AllGames::Scraper
   end
 
   def self.scrape_month
-    months = []
-
     scrape = get_page.css("div.ds-main").each do |r|
       january = r.css("h2")[0].text
       february = r.css("h2")[1].text
@@ -17,7 +15,6 @@ class AllGames::Scraper
       september = r.css("h2")[6].text
       tba = r.css("h2")[7].text
     end
-    months << scrape
   end
 
   def self.scrape_game
@@ -32,5 +29,12 @@ class AllGames::Scraper
         tba_games = r.css("div.view-content")[7].text
       end
     end
+
+  def strip_bad_chars(text)
+    text.gsub!("n");
+    text.gsub!("t");
+    text.gsub!("\ ")
+  return text
+end
 
 end
