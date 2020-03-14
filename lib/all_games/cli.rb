@@ -39,20 +39,19 @@ class AllGames::CLI
   def year
     puts "here are the list of games coming out this year:"
     AllGames::Games.all.each.with_index(1) do |i, game|
-      puts "   #{i}.    #{game.new}"
+      puts "   #{i}.    #{game.name}      "
     end
   end
 
-  def month(input)
+  def month
     puts "please enter the month you would like to view:"
     AllGames::Games.all.select do |s|
-      s.include?(input)
+      s.include?(user_input)
     end
   end
 
   def specific_game
     puts "please enter in the name of the game you would like to see:"
-
   end
 
   def goodbye
