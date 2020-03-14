@@ -1,6 +1,7 @@
 class AllGames::CLI
 
   def call
+    AllGames::Scraper.scrape_month
     puts "Hello and welcome to ALL-Games!"
     menu
     user_input
@@ -38,8 +39,9 @@ class AllGames::CLI
 
   def year
     puts "here are the list of games coming out this year:"
-    AllGames::Games.all.each.with_index(1) do |i, game|
-      puts "   #{i}.    #{game.name}      "
+    games = AllGames::Games.all
+    games.each.with_index(1) do |game, i|
+      puts "   #{i}. #{game.name}-#{game.platform}- #{game.release}      "
     end
   end
 

@@ -9,12 +9,15 @@ class AllGames::Games
     @platform = platform
     @release = release
     @url = url
-
     @@all << self
   end
 
   def self.all
     @@all
+  end
+
+  def self.find_by_index(index)
+    @@all[index]
   end
 
 end
