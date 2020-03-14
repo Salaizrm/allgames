@@ -2,6 +2,7 @@ class AllGames::CLI
 
   def call
     puts "Hello and welcome to ALL-Games!"
+    year
     menu
     user_input
     goodbye
@@ -38,16 +39,13 @@ class AllGames::CLI
 
   def year
     puts "here are the list of games coming out this year:"
-    AllGames::Games.year
+    AllGames::Games.all.each.with_index(1) do |i, game|
+      puts "   #{i}.    #{game.name}"
+    end
   end
 
   def month
-    puts ""
     puts "please enter the month you would like to view:"
-    input = gets.strip.downcase
-    if input == "january"
-      @games = AllGames::Games.month
-    end
   end
 
   def specific_game

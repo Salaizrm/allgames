@@ -1,17 +1,17 @@
 class AllGames::Scraper
 
   def self.get_page
-    page = Nokogiri::HTML(open("https://www.gameinformer.com/2020"))
+    Nokogiri::HTML(open("https://www.gameinformer.com/2020"))
   end
 
   def self.scrape_month
-    scrape = get_page.css("div.ds-main").each do |r|
+    page = get_page.css("div.ds-main").each do |r|
       r.css(".calendar_entry").each do |s|
-        name = s.css("a")[0].text
-        platform = s.css("em")[0].text
-        release = s.css("time")[0].text
-        url = s.css("a")[0].attribute("href").text
-        AllGames::Games.new(name,platform,release,url)
+        name = s.css("a").text
+        platform = s.css("em").text
+        release = s.css("time").text
+        url = s.css("a").attribute("href").text
+        AllGames::Games.new(name, platform, release, url)
       end
     end
   end
