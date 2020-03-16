@@ -1,6 +1,6 @@
 class AllGames::Games
 
-  attr_accessor :name, :platform, :release, :url
+  attr_accessor :name, :platform, :release, :url, :description
 
   @@all = []
 
@@ -12,12 +12,12 @@ class AllGames::Games
     @@all << self
   end
 
-  def self.all
-    @@all
+  def description
+    @description = description
   end
 
-  def self.find_by_index(index)
-    @@all[index]
+  def self.all
+    @@all
   end
 
 end

@@ -1,28 +1,16 @@
-# Allgames
+# All-Games
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/allgames`. To experiment with that code, run `bin/console` for an interactive prompt.
+Hello and welcome to All-Games! The purpose of this gem is to show you the list of upcoming games this year, what consoles they're coming out on, their release date and a description (what company and developer are publishing the game).
 
-TODO: Delete this and the text above, and describe your gem
+To run this program add this to your terminal line (./bin/all-games) and hit enter.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'allgames'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install allgames
+To install this gem simply copy the SSH from github, type 'git clone' , paste the SSH and hit enter.
 
 ## Usage
 
-TODO: Write usage instructions here
+once you run the program through (./bin/all-games) menu prompts will show you what commands to use.
 
 ## Development
 

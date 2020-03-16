@@ -10,7 +10,8 @@ class AllGames::Scraper
         name = s.css("a").text
         platform = s.css("em").text
         release = s.css("time").text
-        url = s.css("a").attribute("href").text
+        url = s.css("a").attribute("href").value
+        description =
         AllGames::Games.new(name, platform, release, url)
       end
     end
@@ -24,8 +25,3 @@ class AllGames::Scraper
   end
 
 end
-
-  # def self.scrape_description(game)
-  #   @doc = Nokogiri::HTML(open(game.url))
-  #   game.description = @doc.css("div.views-element-container").text
-  # end

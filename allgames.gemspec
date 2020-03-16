@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.email         = ["'work.salaizrm@gmail.com'"]
 
   spec.summary       = %q{"lets you search game."}
-  spec.description   = %q{"lets you search game."}
-  spec.homepage      = "http://rubygems.org/gems/all-games-cli-gem"
+  spec.description   = %q{"This gem allows you to see the list of games coming out this year and view their descriptions!"}
+  spec.homepage      = "https://github.com/Salaizrm/all-games-cli-gem"
   spec.license       = "MIT"
 
 

@@ -1,12 +1,4 @@
-REMINDERS: EVERYTIME YOU OPEN PROJECT YOU MUST DO THIS:
-
-Delete all-games-cli-gem, git clone your repository, enter cd all-games-cli-gem
-
-if you dont do this progress wont be saved properly to repository.
-
 once you get to place to save... SAVE. ((git add .),(git commit -m"insert what was done this save"),(git push) this will push changes to repository on github.)
-
-copy code to word(fail safe)
 
 GENERAL IDEA:
 

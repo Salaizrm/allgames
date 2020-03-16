@@ -12,8 +12,8 @@ class AllGames::CLI
     puts "please select one of the options provided:"
     puts <<-MENU
     0 - list all games coming out this year.
-    1 - list all games coming out for a specific month.
-    2 - search for a specific game.
+    1 -(UNDER CONSTRUCTION) list all games coming out for a specific month.
+    2 -(UNDER CONSTRUCTION) search for a specific game.
 
     To return to this menu type 'menu'
     To exit this program simply type 'exit'
@@ -39,22 +39,25 @@ class AllGames::CLI
 
   def year
     puts "here are the list of games coming out this year:"
+    puts "(UNDER CONSTRUCTION)if you'd like to see a description of the game enter the number associated with it."
     games = AllGames::Games.all
     games.each.with_index(1) do |game, i|
       puts <<-YEAR
 
-      #{i}. #{game.name} - #{game.platform} - #{game.release}
+      #{i}. #{game.name} - (#{game.platform}) - (#{game.release})
       YEAR
     end
   end
 
   def month
     puts "please enter the month you would like to view:"
-      input = gets.strip.downcase
   end
 
   def specific_game
     puts "please enter in the name of the game you would like to see:"
+  end
+
+  def description
   end
 
   def goodbye
