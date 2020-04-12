@@ -1,6 +1,6 @@
 class AllGames::Games
 
-  attr_accessor :name, :platform, :release, :url, :description
+  attr_accessor :name, :platform, :release, :url
 
   @@all = []
 
@@ -10,10 +10,6 @@ class AllGames::Games
     @release = release
     @url = url
     @@all << self
-  end
-
-  def description
-    @description = description
   end
 
   def self.all
