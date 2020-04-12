@@ -16,4 +16,10 @@ class AllGames::Scraper
     end
   end
 
+  def self.scrape_description(name)
+    page = Nokogiri::HTML(open("https://www.gameinformer.com/product/name"))
+    header = page.css("div.span").text
+  end
+
+
 end

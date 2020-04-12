@@ -28,11 +28,11 @@ class AllGames::CLI
       case input
         when "0"
           year
-        when "1"
-          month
-        when "2"
-          specific_game
         when "menu"
+          menu
+        else
+          puts ""
+          puts "Sorry I dont understand that input."
           menu
         end
       end
@@ -52,6 +52,9 @@ class AllGames::CLI
     puts ""
     puts "if you'd like to see a description of the game enter the number associated with it."
     puts "Games that contain a () are TBA"
+  end
+
+  def description
   end
 
   def goodbye
